@@ -60,7 +60,8 @@ h1 {
 }
 
 .contents {
-    width: 90%;
+    min-width: 11em;
+    max-width: 12em;
     margin-left: auto;
     margin-right: auto;
     left: 0;
