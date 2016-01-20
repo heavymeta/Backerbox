@@ -30,7 +30,7 @@ h1 {
 .panel .artistname {
   font-size: 26pt;
   padding-top:.7em;
-  font-family: "kepler-std-display";
+  font-family: 'Playfair Display', serif;
   font-weight: bold;
   text-align: center;
   color: #525252;
