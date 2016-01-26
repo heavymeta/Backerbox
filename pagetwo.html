@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backer Box</title>
+  <!-- JQuery -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap -->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/b.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+
+<body>
+    <div class="panel">
+        <p class="backing_title">BACKING</p>
+        <hr id="break">
+        <p class="backing_subhead">This Backer Box supports playing more than 120 shows per year. You also get:</p>
+
+      <form role="form" id="payment-form">
+          <div class="btn-group btn-group-justified btn-group-lg" data-toggle="buttons" id="amount" role="group" aria-label="...">
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="option1"> $2
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="option2"> $3
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="option3"> $5
+            </label>
+          </div>
+
+          <div id="button_pay">
+            <button id="paypal" type="submit" title="Pay for Backer Box">
+          </div>
+  </form>
+  </div>
+</body>
+</html>
