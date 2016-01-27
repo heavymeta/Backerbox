@@ -19,9 +19,13 @@
 
 <body>
     <div class="panel">
+      <div id="backbutton">
+        <a href="index.html">HOME</a>
+      </div>
+
         <p class="backing_title">BACKING</p>
         <hr id="break">
-        <p class="backing_subhead">This Backer Box supports playing more than 120 shows per year. You also get:</p>
+        <p class="backing_subhead">Subscribing to Edith and Bennett's Backer Box gets you two albums, and helps support them playing more than 120 performances a year.</p>
 
         <div class="btn-group btn-group-justified btn-group-lg" data-toggle="buttons" id="amount" role="group" aria-label="...">
           <label class="btn btn-primary" data-wat='2'>
@@ -47,6 +51,7 @@ $('.btn').on('click',function(e){
 })
 </script>
 
+<div id="payment_button">
   <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=MEQKQRX2EM9LA"
     data-button="subscribe"
     data-name="Backer Box for Edith &amp; Bennett"
@@ -55,6 +60,8 @@ $('.btn').on('click',function(e){
     data-period="M"
     data-env="sandbox"
 ></script>
+</div>
+
 
 
   </div>

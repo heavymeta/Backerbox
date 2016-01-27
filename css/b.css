@@ -10,7 +10,7 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.2;
   letter-spacing: -0.025em;
-  background-color: #F4F4F1;
+  background-color: #fff;
   margin:0;
 }
 
@@ -23,7 +23,7 @@ h1 {
     background-size: 100%;
     height: 100vh;
     margin:0;
-    background-color: #F4F4F1;
+    background-color: #fff;
     display: block;
   }
 
@@ -38,7 +38,7 @@ h1 {
 .panel .backing_title {
   font-size: 14pt;
   font-weight: lighter;
-  margin-top:3em;
+  margin-top:5em;
   margin-left: 1.5em;
   margin-right: 1.5em;
 }
@@ -60,8 +60,6 @@ h1 {
 }
 
 .panel button {
-  background-image: url(../img/buy-logo-large.png);
-  background-repeat: no-repeat;
   height: 55px;
   width: 275px;
   border: none;
@@ -69,9 +67,18 @@ h1 {
   margin-top:1em;
 }
 
-.panel #button_pay {
+#payment_button {
   width: 275px;
   margin-left: auto;
   margin-right: auto;
+  margin-top:2em;
+}
 
+#backbutton {
+  float: right;
+margin-top:2em;
+margin-right: 2em;
+  font-size: 12pt;
+  color:#ccc;
+  font-weight: lighter;
 }
