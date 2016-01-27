@@ -23,33 +23,40 @@
         <hr id="break">
         <p class="backing_subhead">This Backer Box supports playing more than 120 shows per year. You also get:</p>
 
+        <div class="btn-group btn-group-justified btn-group-lg" data-toggle="buttons" id="amount" role="group" aria-label="...">
+          <label class="btn btn-primary" data-wat='2'>
+            <input type="radio" name="options" id="option1"> $2
+          </label>
+          <label class="btn btn-primary" data-wat='3'>
+            <input type="radio" name="options" id="option2"> $3
+          </label>
+          <label class="btn btn-primary" data-wat='5'>
+            <input type="radio" name="options" id="option3"> $5
+          </label>
+        </div>
+
+<script>
+$(document).ready(function() {
+    $(".btn").first().button("toggle");
+});
+var amount = 2;
+$('.btn').on('click',function(e){
+  amount = $(this).attr('data-wat');
+  $('input[name=amount]').val(amount);
+  $('input[name=a3]').val(amount);
+})
+</script>
+
   <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=MEQKQRX2EM9LA"
     data-button="subscribe"
     data-name="Backer Box for Edith &amp; Bennett"
-    data-amount="3"
+    data-amount="5"
     data-recurrence="12"
     data-period="M"
     data-env="sandbox"
 ></script>
 
 
-      <form role="form" id="payment-form">
-          <div class="btn-group btn-group-justified btn-group-lg" data-toggle="buttons" id="amount" role="group" aria-label="...">
-            <label class="btn btn-primary">
-              <input type="radio" name="options" id="option1"> $2
-            </label>
-            <label class="btn btn-primary">
-              <input type="radio" name="options" id="option2"> $3
-            </label>
-            <label class="btn btn-primary">
-              <input type="radio" name="options" id="option3"> $5
-            </label>
-          </div>
-
-          <div id="button_pay">
-            <button id="paypal" type="submit" title="Pay for Backer Box">
-          </div>
-  </form>
   </div>
 </body>
 </html>
