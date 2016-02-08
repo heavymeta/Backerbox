@@ -18,25 +18,52 @@
 </head>
 
 <body>
-    <div class="panel">
-      <div id="artist">
-        <div class="artistbio">
-          <p class="artistname">Edith and Bennett</p>
-          <p class="artistinfo">This Backer Box supports playing more than 120 shows per year. You also get:</p>
-        </div>
-      </div>
+  <div class="container">
+    <div class="artist">
+      <div class="contents_container">
+        <p class="artistname">Edith and Bennett</p>
       <div class="contents">
         <div id="a"><img src="img/album_a.png"></div>
         <div id="c"><p>2 Albums</p><br><p>One Video</p></div>
         <div id="b"><img src="img/album_b.png"></div>
-
+      </div>
       </div>
     </div>
-    <a href="payment.html">
-      <div class="go_button">
-        <p class="button_title">Get this Backer Box for:</p>
-        <p class="button_offer">$3/mo for one year</p>
+
+    <div class="payment">
+      <div class="explanation">
+        <p>Get live recordings, updates, and support Edith and Bennet playing 120 shows this year.</p>
       </div>
-    </a>
+      <div class="btn-group btn-group-justified btn-group-lg" data-toggle="buttons" id="amount" role="group" aria-label="...">
+        <label class="btn btn-primary" data-wat='2'>
+          <input type="radio" name="options" id="option1"> $2
+        </label>
+        <label class="btn btn-primary" data-wat='3'>
+          <input type="radio" name="options" id="option2"> $3
+        </label>
+        <label class="btn btn-primary" data-wat='5'>
+          <input type="radio" name="options" id="option3"> $5
+        </label>
+      </div>
+      <a href="payment.html">
+        <div class="go_button">
+          <p class="button_title">Get this Backer Box for:</p>
+          <p class="button_offer">$3/mo for one year</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  <script>
+  $(document).ready(function() {
+      $(".btn").first().button("toggle");
+  });
+  var amount = 2;
+  $('.btn').on('click',function(e){
+    amount = $(this).attr('data-wat');
+    $('input[name=amount]').val(amount);
+    $('input[name=a3]').val(amount);
+  })
+  </script>
 </body>
 </html>
